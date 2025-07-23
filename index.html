@@ -414,14 +414,59 @@
     margin-top: 10px;
     font-size: 16px;
   }
+<style>
+  .certifications-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .cert-box {
+    width: 200px;
+    text-align: center;
+  }
+
+  .cert-box img {
+    width: 100%;
+    height: auto;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+  }
+
+  .cert-box img:hover {
+    transform: scale(1.03);
+  }
+
+  .cert-box p {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  @media (max-width: 900px) {
+    .cert-box {
+      width: 45%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .cert-box {
+      width: 100%;
+    }
+  }
 </style>
+
 <div class="container">
   <h2>Certifications</h2>
   <div class="certifications-container">
 
     <div class="cert-box">
       <a href="https://github.com/fab-loan/certificates/blob/main/Practera_Badge.pdf" target="_blank">
-        <img src="images/Practera_Badge.jpeg" alt="NSW Jobs Connect Program"> <!-- Ensure this is an image, not a PDF -->
+        <img src="images/Practera_Badge.jpeg" alt="NSW Jobs Connect Program">
       </a>
       <p>NSW Jobs Connect Program</p>
     </div>
@@ -440,13 +485,9 @@
       <p>Intermediate SQL</p>
     </div>
 
-  </div>
-</div>
-
-
     <div class="cert-box">
       <a href="https://github.com/fab-loan/certificates/blob/main/SQL%20Data%20Reporting%20and%20Analysis.pdf" target="_blank">
-        <img src="images/SQL%20data%20reporting%20and%20analysis.png" alt=" SQL reporting and analysis Certificate">
+        <img src="images/SQL%20data%20reporting%20and%20analysis.png" alt="SQL reporting and analysis Certificate">
       </a>
       <p>SQL - Data Reporting and Analysis</p>
     </div>
@@ -458,19 +499,22 @@
       <p>Data Analysis Foundations</p>
     </div>
 
-     <div class="cert-box">
+    <div class="cert-box">
       <a href="https://github.com/fab-loan/certificates/blob/main/The%20Non%20Technical%20Skills%20of%20Effective%20Data%20Scientists.pdf" target="_blank">
         <img src="images/Non-technical%20skils%20for%20Data%20Scientists.png" alt="Data analysis Certificate">
       </a>
       <p>Non-tech skills for Data Scientists</p>
     </div>
-      
+
     <div class="cert-box">
       <a href="https://github.com/fab-loan/certificates/blob/main/Learning%20Data%20Analytics%201%20Foundations.pdf" target="_blank">
         <img src="images/Data%20analysis.png" alt="Data analysis Certificate">
       </a>
       <p>Data Analysis Foundations</p>
     </div>
+
+  </div>
+</div>
 
 
  <style>
